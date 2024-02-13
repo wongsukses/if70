@@ -17,39 +17,45 @@
 <body>
 
 <div class="container-fluid>
-<span id="ft821"></span>
-
 <h2>Aip -TKG</h2>
 <h3>Soal Penugasan Materi 8.2.</h3>
 <p>1.<br>Gas Helium memiliki massa molar sekitar 4 g/mol dan gas hidrogen (H) memiliki massa molar sekitar 2 g/mol. Jika suhu gas saat itu adalah <span id="ft821k"></span> K, hitunglah:
 <br>a. kelajuan rms molekul gas helium, dan
 <br>b. kelajuan rms molekul gas hidrogen.</p>
-<p>2.<br> </p>
+<p>2.<br>Berapakah energi kinetik translasi rata-rata <span id="ft822v"></span> L gas oksigen yang ditahan pada temperatur <span id="ft822t"></span>°C dan tekanan <span id="ft822p"></span> atm? </p>
 <p>2.<br> </p>
 <p>2.<br> </p>
 <hr>
 <h2>Kunci Jawaban</h2>
 <h3>Bagian A.</h3>
 <p>No. 1: a.<span id="ft821ja"></span> m/s | b.<span id="ft821jb"></span> m/s</p>
-<p>No. 3: <span id="ft822j"></span> °F</p>
+<p>No. 2: <span id="ft822j"></span> Joule</p>
 <p>No. 6: <span id="ft826jc"></span> °C ; <span id="ft826jf"></span> °F</p>
 <p>No. 7: <span id="ft827j"></span> °X</p>
 <p>No. 13: <span id="ft8213j"></span> J</p>
-<p>No. 3: <span id="ft822j"></span></p>
-<p>No. 3: <span id="ft822j"></span></p>
-<p>No. 3: <span id="ft822j"></span></p>
+<p>No. 3: <span id="ft822"></span></p>
+<p>No. 3: <span id="ft822"></span></p>
+<p>No. 3: <span id="ft822"></span></p>
 <script>
 //Math.floor(Math.random() * 10)*2+50; //random antara 50-70 kelipatan 2
 
 //ft821
 let ft821k=Math.floor(Math.random()*15)*10+300; //random antara 300-450 kelipatan 10
-let ft821ja=Math.sqrt(3*3.81*ft821k/4e-3);
-let ft821jb=Math.sqrt(3*3.81*ft821k/2e-3);
+let ft821ja=Math.sqrt(3*8.31*ft821k/4e-3);
+let ft821jb=Math.sqrt(3*8.31*ft821k/2e-3);
 document.getElementById("ft821k").innerHTML = ft821k;
 document.getElementById("ft821ja").innerHTML = ft821ja.toFixed(0);
 document.getElementById("ft821jb").innerHTML = ft821jb.toFixed(0);
 
+//ft822
+let ft822v=Math.floor(Math.random()*35)*0.2+1; //random antara 1-8 kelipatan 0.2
+let ft822t=Math.floor(Math.random()*20)*5; //random antara 0-100 kelipatan 5
+let ft822p=Math.floor(Math.random()*15)*0.2+1; //random antara 1-4 kelipatan 0.2
+let ft822j=1.5*1.38e-23*(ft822t+273);
+document.getElementById("ft822v").innerHTML = ft822v.toFixed(1);
+document.getElementById("ft822t").innerHTML = ft822t;
+document.getElementById("ft822p").innerHTML = ft822p.toFixed(1);
+document.getElementById("ft822j").innerHTML = ft822j.toExponential(2);
 </script>
-
 </body>
 </html>
