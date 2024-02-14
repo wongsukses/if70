@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>AIP TKG</title>
-  <style>
-  span {
-    color: blue;
-  }
-  </style>
+<style>
 
+span {
+  color: blue;
+}
+
+</style>
 </head>
 <body>
+
+<span id="ft822"></span>
+
 <h2>Aip -TKG</h2>
 <h3>Soal Penugasan Materi 8.2.</h3>
 <p>1.<br>Gas Helium memiliki massa molar sekitar 4 g/mol dan gas hidrogen (H) memiliki massa molar sekitar 2 g/mol. Jika suhu gas saat itu adalah <span id="ft821k"></span> K, hitunglah:
 <br>a. kelajuan rms molekul gas helium, dan
 <br>b. kelajuan rms molekul gas hidrogen.</p>
 <p>2.<br>Berapakah energi kinetik translasi rata-rata <span id="ft822v"></span> L gas oksigen yang ditahan pada temperatur <span id="ft822t"></span>°C dan tekanan <span id="ft822p"></span> atm? </p>
+<p>3.<br>Pada temperatur berapakah kelajuan rms molekul Hidrogen (Mr=2), sama dengan <span id="ft823v"></span> m/s? </p>
+<p>5.<br>Suatu gas ideal berada dalam ruang tertutup sehingga kecepatannya menjadi dua kali kecepatan mula-mula. Jika suhu mula-mula <span id="ft825t"></span>°C, tentukanlah suhu akhir gas tersebut. </p>
+<p>7.<br>Massa sebuah molekul nitrogen adalah empat belas kali massa sebuah molekul hidrogen. Pada suhu berapakah molekul-molekul hidrogen memiliki laju rata rata yang sama dengan molekul-molekul nitrogen pada suhu <span id="ft827t"></span> K </p>
+<p>2.<br> </p>
 <p>2.<br> </p>
 <p>2.<br> </p>
 <hr>
@@ -23,9 +30,9 @@
 <h3>Bagian A.</h3>
 <p>No. 1: a.<span id="ft821ja"></span> m/s | b.<span id="ft821jb"></span> m/s</p>
 <p>No. 2: <span id="ft822j"></span> Joule</p>
-<p>No. 6: <span id="ft826jc"></span> °C ; <span id="ft826jf"></span> °F</p>
-<p>No. 7: <span id="ft827j"></span> °X</p>
-<p>No. 13: <span id="ft8213j"></span> J</p>
+<p>No. 3: <span id="ft823j"></span> K 
+<p>No. 5: <span id="ft825j"></span> °C</p>
+<p>No. 7: <span id="ft827j"></span> K</p>
 <p>No. 3: <span id="ft822"></span></p>
 <p>No. 3: <span id="ft822"></span></p>
 <p>No. 3: <span id="ft822"></span></p>
@@ -49,6 +56,27 @@ document.getElementById("ft822v").innerHTML = ft822v.toFixed(1);
 document.getElementById("ft822t").innerHTML = ft822t;
 document.getElementById("ft822p").innerHTML = ft822p.toFixed(1);
 document.getElementById("ft822j").innerHTML = ft822j.toExponential(2);
+
+//ft823
+let ft823v=Math.floor(Math.random()*100)*10+500; //random antara 500-1500 kelipatan 10
+let ft823j=(ft823v**2)*0.002/(1.5*8.31);
+document.getElementById("ft823v").innerHTML = ft823v;
+document.getElementById("ft823j").innerHTML = ft823j.toFixed(0);
+
+//ft825
+let ft825t=Math.floor(Math.random()*50)*2+10; //random antara 10-110 kelipatan 2
+let ft825j=(4*(ft825t+273)-273);
+document.getElementById("ft825t").innerHTML = ft825t;
+document.getElementById("ft825j").innerHTML = ft825j.toFixed(0);
+
+//ft827
+let ft827t=Math.floor(Math.random()*100)*2+300; //random antara 300-500 kelipatan 2
+let ft827j=ft827t/14;
+document.getElementById("ft827t").innerHTML = ft827t;
+document.getElementById("ft827j").innerHTML = ft827j.toFixed(0);
+
+
 </script>
+
 </body>
 </html>
